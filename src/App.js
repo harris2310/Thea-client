@@ -8,7 +8,7 @@ import {apiPostCall, imageCall} from './Api';
 //COMMENT FOR CLIENT ONLY
 import {dataCall} from './Api';
 
-const URL = 'http://localhost:5000/messages';
+const URL = 'https://thea-app-server.herokuapp.com/messages';
 
 
 const App = () => {
