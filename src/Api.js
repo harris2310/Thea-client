@@ -1,4 +1,4 @@
-const dataURL = 'http://localhost:5000/messages';
+const dataURL = 'https://thea-app-server.herokuapp.com/messages';
 //const imageURL = 'http://localhost:5000/messages/files/';
 
 
