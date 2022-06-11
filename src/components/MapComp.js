@@ -9,6 +9,7 @@ import SideBar from './SideBar';
 import '../css/main.css';
 import { iconPerson, iconNew } from '../popupStyle';
 
+/* eslint-disable */
 const MapComp = (props) => {
   const fileInputRef = useRef();
   return (

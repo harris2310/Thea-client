@@ -66,14 +66,14 @@ const App = () => {
   };
 
   const handleFormSubmit = async (e) => {
-    console.log(e);
     const latlng = JSON.stringify(pos);
     const formData = new FormData();
     formData.append('latlng', latlng);
     formData.append('message', inputValue);
     formData.append('uniqueId', uuid());
     formData.append('image', inputImage);
-    const res = await apiPostCall(e, process.env.REACT_APP_URL, formData);
+    console.log(formData);
+    const res = await apiPostCall(e, formData);
     if (res.status === '200') {
       console.log('success');
       setFormSubmitted(true);
@@ -119,7 +119,7 @@ const App = () => {
         )
         : (
           <LandingPage
-            handleClicked={handleClicked} 
+            handleClicked={handleClicked}
             clickedStart={clickedStart}
           />
         )}
