@@ -1,20 +1,17 @@
-const dataURL = 'https://thea-app-server.herokuapp.com/messages';
-//const imageURL = 'http://localhost:5000/messages/files/';
+const dataURL = process.env.REACT_APP_URL;
 
-
-
-const apiGetCall = async (dataURL) => {
+const apiGetCall = async () => {
   const response = await fetch(dataURL, {
     method: 'GET',
     mode: 'cors',
     cache: 'no-cache',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
       // 'Content-Type': 'application/x-www-form-urlencoded',
     },
   });
   return response.json();
-}
+};
 
 /*
 const apiGetImagesCall = async (imageURL) => {
@@ -33,12 +30,13 @@ const apiGetImagesCall = async (imageURL) => {
 
 const dataCall = async () => {
   const messages = await apiGetCall(dataURL);
-  //const images = await apiGetImagesCall(imageURL);
+  // const images = await apiGetImagesCall(imageURL);
   return messages;
-  }
+};
 
-const apiPostCall = async (e, dataURL, formData) => {
+const apiPostCall = async (e, formData) => {
   e.preventDefault();
+  // eslint-disable-next-line no-console
   console.log(formData.message);
   const response = await fetch(dataURL, {
     method: 'POST',
@@ -47,17 +45,16 @@ const apiPostCall = async (e, dataURL, formData) => {
     body: formData,
   });
   return response;
-}
+};
 
 const imageCall = async (e) => {
-  const res = await(fetch(dataURL + '/images/' + e.target.options.imageName), {
+  const res = await (fetch(`${dataURL}/images/${e.target.options.imageName}`), {
     method: 'GET',
     mode: 'cors',
     cache: 'no-cache',
     body: e.target.options.imageName,
   });
   return res;
-}
+};
 
-
-export {dataCall, apiPostCall, imageCall};
+export { dataCall, apiPostCall, imageCall };
