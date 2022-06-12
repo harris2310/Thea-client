@@ -1,6 +1,5 @@
 HIGH PRIOTIRY
 *Mobile-responsive
-*Helmet cross-origin-embedder policy
 
 MEDIUM PRIORITY
 *Refresh popup on Submit
@@ -14,6 +13,7 @@ NO PRIORITY
 *Add to sidebar other user's photos around the selected area
 
 DONE
+*Helmet cross-origin-embedder policy
 *Doesn't send response on submit
 *Title
 *favicon
