@@ -12,12 +12,9 @@ html, body {
 
 .site-content {
   flex: 1;
+  position: relative;
+  text-align: center;
   background-color: $medium-blue;
-  background-image: url('../images/background-image.svg');
-  background-repeat:no-repeat;
-  background-position: 50.7%;
-  background-position-y: bottom;
-  background-size: 45%
 }
 
 .leaflet-container {
@@ -30,7 +27,6 @@ html, body {
   text-align: center;
   font-family: $Arial;
 }
-
 
 .sidebar {
   height: 100%; /* Full-height: remove this if you want "auto" height */
