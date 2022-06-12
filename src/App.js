@@ -1,8 +1,8 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable no-console */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/function-component-definition */
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './css/main.css';
 import uuid from 'react-uuid';
 import MapComp from './components/MapComp';
@@ -74,7 +74,7 @@ const App = () => {
     formData.append('image', inputImage);
     console.log(formData);
     const res = await apiPostCall(e, formData);
-    if (res.status === '200') {
+    if (res.status == '200') {
       console.log('success');
       setFormSubmitted(true);
     } else {
