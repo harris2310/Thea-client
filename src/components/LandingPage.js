@@ -19,9 +19,7 @@ const LandingPage = props => {
           It's developed by me, Harris Hanozidis
         </p>
         <div style={{textAlign: 'center'}}>
-          <Link to='/Map'> 
-            <button className='start-button' onClick={props.handleClicked} type='button'>Start!</button>
-          </Link>  
+          <button className='start-button' onClick={props.handleClicked} type='button'>Start!</button>
         </div>
       </section>
       <footer>

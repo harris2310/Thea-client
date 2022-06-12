@@ -1,21 +1,20 @@
-import React, {useRef} from 'react'
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+/* eslint-disable max-len */
+import React, {useRef} from 'react';
+import {
+  Map, TileLayer, Marker, Popup,
+} from 'react-leaflet';
+import { Checkmark } from 'react-checkmark';
+import { RotatingSquare } from 'react-loader-spinner';
 import SideBar from './SideBar';
 import '../css/main.css';
-import { RotatingSquare  } from  'react-loader-spinner'
-import { iconPerson, iconNew} from '../popupStyle';
-import { Checkmark } from "react-checkmark";
+import { iconPerson, iconNew } from '../popupStyle';
 
-
-
+/* eslint-disable */
 const MapComp = (props) => {
-
-  const fileInputRef=useRef();
-  
-
+  const fileInputRef = useRef();
   return (
     <div>
-      <Map center={[0,0]} zoom={3} minZoom={3} maxBounds={[[-115, -195], [130, 225]]} onClick={props.handlePos}>
+      <Map center={[0, 0]} zoom={3} minZoom={3} maxBounds={[[-115, -195], [130, 225]]} onClick={props.handlePos}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

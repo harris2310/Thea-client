@@ -29,7 +29,7 @@ const apiGetImagesCall = async (imageURL) => {
 */
 
 const dataCall = async () => {
-  const messages = await apiGetCall(dataURL);
+  const messages = await apiGetCall();
   // const images = await apiGetImagesCall(imageURL);
   return messages;
 };
@@ -37,7 +37,7 @@ const dataCall = async () => {
 const apiPostCall = async (e, formData) => {
   e.preventDefault();
   // eslint-disable-next-line no-console
-  console.log(formData.message);
+  console.log(formData);
   const response = await fetch(dataURL, {
     method: 'POST',
     mode: 'cors',

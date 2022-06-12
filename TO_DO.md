@@ -1,7 +1,4 @@
 HIGH PRIOTIRY
-*Title
-*favicon
-*Fix white screen after start
 *Mobile-responsive
 
 MEDIUM PRIORITY
@@ -16,6 +13,11 @@ NO PRIORITY
 *Add to sidebar other user's photos around the selected area
 
 DONE
+*Helmet cross-origin-embedder policy
+*Doesn't send response on submit
+*Title
+*favicon
+*Fix white screen after start
 *Rate-limiter
 *Backend data validation
 *.env

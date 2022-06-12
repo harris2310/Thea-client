@@ -18,8 +18,11 @@
         "react"
     ],
     "rules": {
-      "rules": {
-        "react/jsx-filename-extension": [1, { "allow": "as-needed" }]
+        "react/function-component-definition": [
+          0,
+          {
+            "namedComponents": "function-declaration"
+          }],
+          "react/jsx-filename-extension": 0
       }
-    }
 }
