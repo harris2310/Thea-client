@@ -17,8 +17,6 @@ const LandingPage = (props) => (
       <p className="app-description">
         It's an App where people can share their photos and pinpoint on the map where the photo was taken
         <br />
-        <br />
-        It's developed by me, Harris Hanozidis
       </p>
       <img src={bgImageURL} className="bg-image" alt="graphic" />
       <div className="start-container">
@@ -55,6 +53,11 @@ const LandingPage = (props) => (
           </a>
         </div>
       </div>
+        <div className='footer-credit'>
+          Developed by Harris Hanozidis
+          <br />
+          Thanks for Anna Bakogeorgou for the graphic
+        </div>
     </footer>
   </div>
 );

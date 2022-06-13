@@ -41,7 +41,7 @@ html, body {
 }
 
 .flex-footer {
-  margin: 20px;
+  margin: 0.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,6 +53,12 @@ footer {
   max-height: 250px;
 }
 
+.footer-credit {
+  font-size: 0.8em;
+  margin: 10px;
+  text-align: center;
+  color: $light-blue;
+}
 
 
 @media screen and (max-width: 1400px) {

@@ -226,17 +226,6 @@
 }
 
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .bg-image {
-    width: 80%;
-    top: 35%;
-  }
-
-  .start-container {
-    top: 59%
-  }
-}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -247,12 +236,12 @@
 
   .bg-image {
     width: 270px;
-    top: 35%
+    top: 30%
   }
 
   .start-container {
     margin-top: 103px;
-    top: 35%
+    top: 30%
   }
 }
 
@@ -284,12 +273,12 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .bg-image {
-    width: 350px;
-    top: 25%;
+    width: 300;
+    top: 35%;
   }
 
   .start-container {
-    margin-top: 80px;
+    margin-top: 120px;
     top: 35%
   }
 }
@@ -297,12 +286,12 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1500px) {
   .bg-image {
-    width: 500px;
-    top: 25%;
+    width: 400px;
+    top: 35%;
   }
 
   .start-container {
-    margin-top: 138px;
+    margin-top: 165px;
     top: 35%
   }
 }
