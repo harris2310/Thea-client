@@ -3,20 +3,36 @@
   width: 70px;
 }
 
-
-
 .button-container {
   margin: 1rem;
   text-align: center;
 }
 
+.start-container {
+  display: inline-block;
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 53%;
+}
+
+.bg-image {
+  height: auto;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(2%);
+  left: 0;
+  right: 0;
+}
+
 .start-button {
-  margin: auto;
   height: 50px;
   width: 50px;
   border-radius: 50%;
   border: none;
-  margin: 12em 0;
   text-decoration:none;
   font-family: $basic-font;
   font-weight: 800;
@@ -30,16 +46,27 @@
   cursor: pointer;
 }
 
+.rotating-square-wrapper {
+  margin: auto;
+}
+
+.loading-circle {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: $orange;
+}
+
 .spacing-button {
   display:inline-block;
   border: none;
   border-radius: 3px;
   padding:1em 2em;
   margin: 1em 0;
-  text-decoration:none;
-  font-family: 'Play', sans-serif;
-  font-weight: 400;
-  color:#f1faee;
+  font-family: $basic-font;
+  color: $light-blue;
   background-color: $dark-blue;
   transition: all 0.15s;
 }
@@ -67,6 +94,7 @@
   font-size: 1.1em;
   font-weight: 800;
 }
+
 
 .popup {
   text-align: center;
@@ -133,11 +161,33 @@
   margin: auto;
 }
 
+
+.loader {
+  width: 38px;
+  height: 38px;
+  border: 5px solid $light-blue;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin-top: 8px;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
 .lds-ring {
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 
 .lds-ring-wrapper {
@@ -149,8 +199,8 @@
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   margin: 8px;
   border: 8px solid $white;
   border-radius: 50%;
@@ -172,5 +222,87 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .bg-image {
+    width: 80%;
+    top: 35%;
+  }
+
+  .start-container {
+    top: 59%
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .app-description {
+    font-size: 1em;
+  }
+
+  .bg-image {
+    width: 270px;
+    top: 35%
+  }
+
+  .start-container {
+    margin-top: 103px;
+    top: 35%
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .bg-image {
+    width: 300px;
+    top: 35%
+  }
+
+  .start-container {
+    margin-top: 120px;
+    top: 35%
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .bg-image {
+    width: 350px;
+    top: 25%;
+  }
+
+  .start-container {
+    margin-top: 80px;
+    top: 35%
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .bg-image {
+    width: 500px;
+    top: 25%;
+  }
+
+  .start-container {
+    margin-top: 138px;
+    top: 35%
   }
 }

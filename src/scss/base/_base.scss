@@ -16,7 +16,6 @@ h3 {
   font-family: 'Play', cursive;
 }
 
-
 .socials-title {
   text-align: center;
   font-family: 'Play', cursive;
@@ -25,10 +24,8 @@ h3 {
   color: $light-blue;
 }
 
-
 .title-thea {
   padding: 1rem 0;
-  font-size: 4em;
   font-family: 'Koulen', cursive;
 }
 
@@ -48,8 +45,8 @@ h3 {
 .app-description {
   text-align: center;
   font-family: 'Play', cursive;
-  font-size: 1.5rem;
-  margin: 5rem;
+  font-size: 1.3em;
+  margin: 50px;
   color: #E0FBFC;
 }
 
@@ -103,4 +100,29 @@ textarea {
   box-sizing: border-box;
   outline: none;
   border-radius: 3px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .app-description {
+    font-size: 0.5em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .app-description {
+    font-size: 1em;
+  }
+
+  .title-thea {
+    font-size: 2em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .title-thea {
+    font-size: 3em;
+  }
 }

@@ -1,4 +1,5 @@
 HIGH PRIOTIRY
+*Add loading on start button
 *Mobile-responsive
 
 MEDIUM PRIORITY
