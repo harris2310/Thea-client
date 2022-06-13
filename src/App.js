@@ -25,6 +25,7 @@ const App = () => {
   const [pos, setPos] = useState(null);
 
   // COMMENT FOR CLIENT ONLY
+
   useEffect(() => {
     async function fetchToApi() {
       const messagesToState = await dataCall();
