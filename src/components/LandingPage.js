@@ -2,7 +2,7 @@
 import React from 'react';
 import '../css/main.css';
 import { RotatingSquare } from 'react-loader-spinner';
-import bgImageURL from "../images/background-image.svg"
+import bgImageURL from "../images/background-image.png"
 
 const LandingPage = (props) => (
   <div className="site">

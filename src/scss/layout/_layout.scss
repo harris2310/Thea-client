@@ -1,5 +1,5 @@
 html, body {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -30,7 +30,7 @@ html, body {
 
 .sidebar {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 10em; /* Set the width of the sidebar */
+  width: 150px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1000; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -55,3 +55,8 @@ footer {
 
 
 
+@media screen and (max-width: 1400px) {
+  .sidebar {
+    display: none;
+  }
+}

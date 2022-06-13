@@ -9,19 +9,23 @@
 }
 
 .start-container {
+  display: inline-block;
   position:absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  padding: 8em 0
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 53%;
 }
 
 .bg-image {
-  max-width: 50%;
-  margin: auto;
+  height: auto;
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(2%);
+  left: 0;
+  right: 0;
 }
 
 .start-button {
@@ -161,12 +165,13 @@
 .loader {
   width: 38px;
   height: 38px;
-  border: 5px solid $orange;
+  border: 5px solid $light-blue;
   border-bottom-color: transparent;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
+  margin-top: 8px;
   }
 
   @keyframes rotation {
@@ -221,3 +226,83 @@
 }
 
 
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .bg-image {
+    width: 80%;
+    top: 35%;
+  }
+
+  .start-container {
+    top: 59%
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .app-description {
+    font-size: 1em;
+  }
+
+  .bg-image {
+    width: 270px;
+    top: 35%
+  }
+
+  .start-container {
+    margin-top: 103px;
+    top: 35%
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .bg-image {
+    width: 300px;
+    top: 35%
+  }
+
+  .start-container {
+    margin-top: 120px;
+    top: 35%
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .bg-image {
+    width: 350px;
+    top: 25%;
+  }
+
+  .start-container {
+    margin-top: 80px;
+    top: 35%
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .bg-image {
+    width: 500px;
+    top: 25%;
+  }
+
+  .start-container {
+    margin-top: 138px;
+    top: 35%
+  }
+}
