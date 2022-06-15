@@ -15,8 +15,10 @@ const LandingPage = (props) => (
     </header>
     <section className="site-content">
       <p className="app-description">
-        It's an App where people can share their photos and pinpoint on the map where the photo was taken
+        The App where you can share your photos of beautiful views and pinpoint on the map where they were taken
         <br />
+        <br />
+        A collection of experiences
       </p>
       <img src={bgImageURL} className="bg-image" alt="graphic" />
       <div className="start-container">

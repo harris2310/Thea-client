@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import {
   Map, TileLayer, Marker, Popup,
 } from 'react-leaflet';
@@ -92,7 +92,7 @@ const MapComp = (props) => {
                           hidden
                           />
                   <div className='button-container'>
-                    <button  className='spacing-button' type="submit">Upload</button>
+                    <button  className='spacing-button' type="submit">Submit</button>
                   </div>
                 </form>
               }
