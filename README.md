@@ -1,9 +1,9 @@
-THEA APP CLIENT
+## THEA APP CLIENT
 
 Thea is an App where you can share photos of beautiful views and pinpoint on the map where they were taken.
 Simply pin your location add a photo and a message on the map and wait for the confirmation to reload the page.
 
-Local Development
+## Local Development
 
 Navigate to thea-client folder and run npm start to run the app locally
 This repo is for the client side only, check thea-server repo for more information
